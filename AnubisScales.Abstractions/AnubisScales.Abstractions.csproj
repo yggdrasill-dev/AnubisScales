@@ -5,7 +5,24 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>AnubisScales</RootNamespace>
+    <PackageId>AnubisScales.Authorization.Abstractions</PackageId>
+    <Title>AnubisScales.Authorization.Abstractions</Title>
+    <Version>0.0.1</Version>
+    <Authors>Phoenix</Authors>
+    <Company>Valhalla</Company>
+    <Description>授權抽象層</Description>
+    <Copyright>MIT</Copyright>
+    <PackageProjectUrl>https://github.com/yggdrasill-dev/AnubisScales</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/yggdrasill-dev/AnubisScales.git</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AsyncMethodNameFixer" Version="2.3.0" />
