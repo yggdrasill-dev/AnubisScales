@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/方案項目/">
     <File Path=".editorconfig" />
+    <File Path=".github/workflows/ci.yaml" />
     <File Path="README.md" />
   </Folder>
   <Project Path="AnubisScales.Abstractions.UnitTests/AnubisScales.Abstractions.UnitTests.csproj" />

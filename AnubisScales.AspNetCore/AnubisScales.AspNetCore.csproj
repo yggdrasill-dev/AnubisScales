@@ -16,6 +16,7 @@
     <PackageProjectUrl>https://github.com/yggdrasill-dev/AnubisScales</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/yggdrasill-dev/AnubisScales.git</RepositoryUrl>
+    <IsPackable>True</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
