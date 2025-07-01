@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/方案項目/">
+    <File Path=".editorconfig" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="AnubisScales.Abstractions.UnitTests/AnubisScales.Abstractions.UnitTests.csproj" />
+  <Project Path="AnubisScales.Abstractions/AnubisScales.Abstractions.csproj" />
+  <Project Path="AnubisScales.AspNetCore.UnitTests/AnubisScales.AspNetCore.UnitTests.csproj" />
+  <Project Path="AnubisScales.AspNetCore/AnubisScales.AspNetCore.csproj" />
+</Solution>
