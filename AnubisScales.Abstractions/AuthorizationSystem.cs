@@ -1,5 +1,4 @@
-﻿using AnubisScales;
-namespace AnubisScales;
+﻿namespace AnubisScales;
 
 internal class AuthorizationSystem(
 	string systemName,
@@ -8,17 +7,17 @@ internal class AuthorizationSystem(
 {
 	public string Name { get; } = systemName;
 
-	public ValueTask<bool> HasPermissionAsync(
+	public async ValueTask<bool> HasPermissionAsync(
 		IAuthorizationFunction function,
 		IAuthorizationIdentityResolveProvider identityResolver,
 		CancellationToken cancellationToken = default)
 		=> function.AllowAnonymous
-			? ValueTask.FromResult(true)
-			: authorizationDataStore.CheckHasPermissionAsync(
-			Name,
-			function,
-			identityResolver.GetIdentitiesAsync(cancellationToken).ToEnumerable(),
-			cancellationToken);
+			|| await authorizationDataStore.CheckHasPermissionAsync(
+				Name,
+				function,
+				await identityResolver.GetIdentitiesAsync(
+					cancellationToken).ToArrayAsync(cancellationToken),
+				cancellationToken);
 
 	public ValueTask<IAuthorizationFunction?> GetFunctionAsync(string functionName, CancellationToken cancellationToken = default)
 		=> authorizationDataStore.FindFunctionAsync(Name, functionName, cancellationToken);
@@ -30,9 +29,7 @@ internal class AuthorizationSystem(
 			.ConfigureAwait(false))
 		{
 			if (functionMatcher.IsMatch(function))
-			{
 				return function;
-			}
 		}
 
 		return null;

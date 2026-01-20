@@ -10,7 +10,7 @@ public class DependencyInjectionTests
 	{
 		// Arrange
 		var services = new ServiceCollection()
-			.AddPhoenixAuthorizationKits("Test")
+			.AddAnubisScales("Test")
 			.RegisterAuthorizationDataStore<StubAuthorizationDataStore>()
 			.RegisterIdentityResolveProvider<StubIdentityResolveProvider>()
 			.Services;

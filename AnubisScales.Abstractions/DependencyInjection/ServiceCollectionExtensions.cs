@@ -4,7 +4,7 @@ namespace Microsoft.Extensions.DependencyInjection;
 
 public static class ServiceCollectionExtensions
 {
-	public static AuthorizationSystemBuilder AddPhoenixAuthorizationKits(
+	public static AuthorizationSystemBuilder AddAnubisScales(
 		this IServiceCollection services,
 		string systemName)
 	{

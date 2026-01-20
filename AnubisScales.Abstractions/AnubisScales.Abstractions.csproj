@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>AnubisScales</RootNamespace>
     <PackageId>AnubisScales.Authorization.Abstractions</PackageId>
     <Title>AnubisScales.Authorization.Abstractions</Title>
-    <Version>0.0.1</Version>
+    <Version>0.1.0</Version>
     <Authors>Phoenix</Authors>
     <Company>Valhalla</Company>
     <Description>授權抽象層</Description>
@@ -26,8 +26,8 @@
 
   <ItemGroup>
     <PackageReference Include="AsyncMethodNameFixer" Version="2.3.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.1" />
-    <PackageReference Include="System.Interactive.Async" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.2" />
+    <PackageReference Include="System.Interactive.Async" Version="7.0.0" />
   </ItemGroup>
 
 </Project>
