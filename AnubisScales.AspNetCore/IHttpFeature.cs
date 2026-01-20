@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-
-namespace AnubisScales.AspNetCore;
+﻿namespace AnubisScales.AspNetCore;
 
 public interface IHttpFeature
 {

@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using AnubisScales.AspNetCore;
+﻿using AnubisScales.AspNetCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Microsoft.Extensions.DependencyInjection;
 

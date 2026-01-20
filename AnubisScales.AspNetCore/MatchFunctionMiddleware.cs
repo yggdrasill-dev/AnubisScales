@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-
-namespace AnubisScales.AspNetCore;
+﻿namespace AnubisScales.AspNetCore;
 
 internal class MatchFunctionMiddleware(IAuthorizationSystem system) : IMiddleware
 {

@@ -1,8 +1,4 @@
-﻿using AnubisScales;
-using Microsoft.AspNetCore.Http;
-using AnubisScales.AspNetCore;
-
-namespace AnubisScales.AspNetCore;
+﻿namespace AnubisScales.AspNetCore;
 
 public sealed class HttpFunction(
 	Guid id,

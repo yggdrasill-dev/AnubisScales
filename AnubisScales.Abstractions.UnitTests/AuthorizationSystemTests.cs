@@ -1,6 +1,4 @@
-﻿using AnubisScales;
-
-namespace AnubisScales.Abstractions.UnitTests;
+﻿namespace AnubisScales.Abstractions.UnitTests;
 
 public class AuthorizationSystemTests
 {

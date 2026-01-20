@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using AnubisScales.AspNetCore;
-
-namespace AnubisScales.AspNetCore;
+﻿namespace AnubisScales.AspNetCore;
 
 public class HttpCompositeFeature(params IHttpFeature[] features) : IHttpFeature
 {

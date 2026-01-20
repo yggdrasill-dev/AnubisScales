@@ -1,5 +1,4 @@
-﻿using AnubisScales;
-namespace AnubisScales;
+﻿namespace AnubisScales;
 
 public interface IAuthorizationDataStore
 {

@@ -1,6 +1,4 @@
-﻿using AnubisScales;
-using AnubisScales.AspNetCore;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 
 namespace AnubisScales.AspNetCore.UnitTests;
 

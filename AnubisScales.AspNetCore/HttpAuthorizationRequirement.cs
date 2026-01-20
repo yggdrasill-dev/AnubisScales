@@ -1,8 +1,4 @@
-﻿using AnubisScales;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
-using AnubisScales.AspNetCore;
+﻿using Microsoft.AspNetCore.Authorization;
 
 namespace AnubisScales.AspNetCore;
 
